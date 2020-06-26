@@ -25,5 +25,14 @@ public class TranslatorImplTest {
         Assert.assertEquals(response, "Hola Mundo");
     }
 
+    @Test
+    public void testTranslate() throws Exception{
+        String response = translator.translate(from,to,"Other");
+        String expected = "Otro";
+        Assert.assertEquals(response,expected);
+    }
+
+
+
 
 }
